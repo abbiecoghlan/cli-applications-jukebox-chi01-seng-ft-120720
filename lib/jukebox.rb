@@ -56,7 +56,7 @@ def run
     play(songs)
   elsif input.downcase == "help"
     help
-  else if input.downcase == "exit"
+  elsif input.downcase == "exit"
     exit()
     break
   end
