@@ -22,7 +22,7 @@ end
 
 def play(songs)
 
-  puts "Please enger a song name or number: "
+  puts "Please enter a song name or number:"
   input = gets.strip
   
   if input > 0 && input < 10
@@ -36,11 +36,12 @@ end
 def list(songs)
 counter = 0
   while counter < songs.length do
-    puts "#{(counter + 1)}. songs[counter]"
+    puts "#{(counter + 1)}. #{songs[counter]}"
     counter += 1
   end 
 end
 
 def exit_jukebox
+  puts "Goodbye"
 end
 
