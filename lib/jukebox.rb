@@ -50,5 +50,14 @@ end
 def run 
   puts "Please enter a command:"
   input = gets.strip
-  input.downcase() 
+  if input.downcase == "list"
+    list(songs)
+  elsif input.downcase == "play"
+    play(songs)
+  elsif input.downcase == "help"
+    help
+  else if input.downcase == "exit"
+    exit()
+    break
+  end
 end
