@@ -23,8 +23,17 @@ end
 def play(songs)
 counter = 0
   while counter < songs.length do
-    puts songs[counter]
+    puts "#{(counter + 1)}. songs[counter]"
     counter += 1
+  end 
+  
+  puts "Please enger a song name or number: "
+  input = gets.strip
+  
+  if input > 0 && input < 10
+    puts "Playing #{songs[input-1]}."
+  else 
+    puts "Invalid input, please try again."
   end 
 end
 
