@@ -58,7 +58,7 @@ def run
     help
   elsif input.downcase == "exit"
     exit()
-    break
+    return
   end
 
 end
