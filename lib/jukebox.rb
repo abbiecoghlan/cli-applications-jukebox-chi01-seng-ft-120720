@@ -20,7 +20,12 @@ def help
   puts "- exit : exits this program"
 end 
 
-def play 
+def play(songs)
+counter = 0
+  while counter < songs.length do
+    puts songs[counter]
+    counter += 1
+  end 
 end
 
 def list 
