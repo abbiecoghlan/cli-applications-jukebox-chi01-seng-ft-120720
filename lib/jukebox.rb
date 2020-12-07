@@ -27,8 +27,9 @@ def play(songs)
   
   if input.to_i > 0 && input.to_i < 10
     puts "Playing #{songs[input-1]}."
-  elsif input.downcase
-  else 
+  elsif songs.include?(input)
+    puts "Playing #{input}."
+  else
     puts "Invalid input, please try again."
   end 
 
