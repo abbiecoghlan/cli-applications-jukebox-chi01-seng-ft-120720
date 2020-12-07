@@ -55,7 +55,7 @@ def run
   elsif input.downcase == "play"
     play(songs)
   elsif input.downcase == "help"
-    help
+    help()
   elsif input.downcase == "exit"
     exit()
     return
