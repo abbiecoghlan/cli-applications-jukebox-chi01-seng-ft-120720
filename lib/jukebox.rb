@@ -21,12 +21,7 @@ def help
 end 
 
 def play(songs)
-counter = 0
-  while counter < songs.length do
-    puts "#{(counter + 1)}. songs[counter]"
-    counter += 1
-  end 
-  
+
   puts "Please enger a song name or number: "
   input = gets.strip
   
@@ -39,6 +34,11 @@ counter = 0
 end
 
 def list 
+counter = 0
+  while counter < songs.length do
+    puts "#{(counter + 1)}. songs[counter]"
+    counter += 1
+  end 
 end
 
 def exit_jukebox
