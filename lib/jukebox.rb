@@ -18,4 +18,9 @@ end
 def play 
 end
 
-def
+def list 
+end
+
+def exit_jukebox
+end
+
