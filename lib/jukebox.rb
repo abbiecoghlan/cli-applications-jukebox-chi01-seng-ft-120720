@@ -33,7 +33,7 @@ def play(songs)
 
 end
 
-def list 
+def list(songs)
 counter = 0
   while counter < songs.length do
     puts "#{(counter + 1)}. songs[counter]"
